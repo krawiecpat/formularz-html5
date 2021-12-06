@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz HTML5</title>
+</head>
+
+<body>
+    <h4>Aby zapisać sie na szkolenie, wypełnij formularz</h4>
+
+    <form action="https://formspree.io/f/xrgjznjn" method="post">
+
+        <label for="name">Imię</label> <br>
+        <input type="text" name="name" id="name" placeholder="Podaj imię" required> <br>
+
+        <label for="surname">Nazwisko</label> <br>
+        <input type="text" name="surname" id="surname" placeholder="Podaj nazwisko" required> <br>
+
+        <label for="email">Adres e-mail</label> <br>
+        <input type="email" name="mail" id="email" placeholder="Podaj adres e-mail" required> <br>
+
+        <label for="phone">Numer telefonu</label> <br>
+        <input type="tel" name="phone" id="phone" placeholder="123456789" required> <br>
+
+        <label for="choise">Miasto</label> <br>
+        <select name="city" id="choise">
+            <option value="Warszawa">Warszawa</option> 
+            <option value="Gdańsk">Gdańsk</option>
+            <option value="Kraków">Kraków</option>
+        </select> <br>
+        
+        Płeć<br>
+        <label><input type="radio" name="gender" value="Mężczyzna">Mężczyzna</label>
+        <label><input type="radio" name="gender" value="Kobieta">Kobieta</label>
+
+        <br><br>
+
+        <label for="checkbox">Wyrażam zgodę na przetwarzanie danych osobowych</label> <br>
+        <input type="checkbox" name="agreement" id="checkbox" required>
+
+        <br>
+
+        <label for="textarea">Wiadomość</label> <br>
+        <textarea name="message" id="textarea"></textarea> <br>
+
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+
+</html>
